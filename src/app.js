@@ -5,6 +5,8 @@ const hand = require('express-handlebars')
 const app = express()
 const port = 3000
 const route = require('./routers/index.route')
+const connect = require('./connected')
+const connected = require('./connected')
 
 app.use(express.static(path.join(__dirname,'public')))
 
@@ -20,6 +22,8 @@ app.engine('hbs',hand({
 app.set('view engine','hbs')
 app.set('views',path.join(__dirname,'resources/views'))
 
+//connect 
+connected()
 //Router init
 route(app)
 
