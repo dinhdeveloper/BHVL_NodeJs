@@ -16,6 +16,7 @@
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "node-sass": "^5.0.0",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "socket.io": "^3.0.4"
   }
 }
